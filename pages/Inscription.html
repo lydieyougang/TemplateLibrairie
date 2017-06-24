@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css">
+    <title>Coordonnees nouveau client</title>
+</head>
+<body>
+<header class="row">
+    <div class="col-xs-12">
+        Haut de page
+    </div>
+</header>
+<div class="container">
+    <div class="row well">
+        <div class="col-md-8 col-md-offset-2">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-6">
+                        <label class="radio-inline">
+                            <input type="radio" name="civilite" id="m" value="monsieur" checked> M
+                        </label>
+                        <label class="radio-inline">
+                             <input type="radio" name="civilite" id="mme" value="madame"> Mme
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="civilite" id="mlle" value="mademoiselle"> Mlle
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nom" class="control-label col-md-2">Nom </label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="nom" id="nom" placeholder="nom" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="lastName">Prénom </label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="lastName" name="prenom" placeholder="prenom" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dateNaissance" class="control-label col-md-2">Date de naissance</label>
+                    <div class="col-md-6">
+                        <input type="date" name="dateNaissance" id="dateNaissance" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tel1" class="control-label col-md-2">Téléphone 1  </label>
+                    <div class="col-md-6">
+                        <input class="form-control" id="tel1" type="text" name="contact1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tel2" class="control-label col-md-2">Téléphone 2 </label>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" id="tel2" name="contact2">
+                    </div>
+                </div>
+   <!--             <div class="form-group">
+                    <label class="col-md-2 control-label">Adresse </label>
+                    <input type="text" name="adresse" class="form-control">
+                </div>-->
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="email1">Email </label>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" required="required" placeholder="saisissez votre adresse mail" id="email1">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-danger btn-block">Annuler</button>
+                </div>
+                <div class="col-md-offset-4 col-md-2">
+                    <button class="btn btn-success btn-block">Enrégistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="row">
+    <div class="col-xs-12">
+        Pied de page
+    </div>
+</footer>
+</body>
+</html>
